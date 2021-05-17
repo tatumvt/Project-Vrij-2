@@ -237,17 +237,6 @@
                 {
                     "name": "",
                     "id": "3bf4fccb-bf42-4ec5-b215-c967f1d71642",
-                    "path": "<XRController>{LeftHand}/devicePosition",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Generic XR Controller",
-                    "action": "Position",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "9ff25095-8e5a-430e-bb92-037bc51cb04a",
                     "path": "<OpenVROculusTouchController>{LeftHand}/devicePosition",
                     "interactions": "",
                     "processors": "",
