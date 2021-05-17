@@ -247,6 +247,17 @@
                 },
                 {
                     "name": "",
+                    "id": "9ff25095-8e5a-430e-bb92-037bc51cb04a",
+                    "path": "<OpenVROculusTouchController>{LeftHand}/devicePosition",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "71a4d23f-3e9a-4513-923b-ba388c5e84bf",
                     "path": "<XRController>{LeftHand}/gripPressed",
                     "interactions": "",
@@ -263,6 +274,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Generic XR Controller",
+                    "action": "Activate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0cb5a4be-1224-4209-be76-f8bd0da13bd5",
+                    "path": "<OpenVROculusTouchController>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Activate",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -306,6 +328,17 @@
                     "path": "<XRController>{LeftHand}/Primary2DAxis",
                     "interactions": "",
                     "processors": "StickDeadzone",
+                    "groups": "Continuous Move",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "51a71c33-d13c-4412-b631-6638098d2459",
+                    "path": "<OpenVROculusTouchController>{LeftHand}/thumbstick",
+                    "interactions": "",
+                    "processors": "",
                     "groups": "Continuous Move",
                     "action": "Move",
                     "isComposite": false,

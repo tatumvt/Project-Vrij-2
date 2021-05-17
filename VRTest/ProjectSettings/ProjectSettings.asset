@@ -130,8 +130,9 @@ PlayerSettings:
   bundleVersion: 0.1
   preloadedAssets:
   - {fileID: 0}
-  - {fileID: 4202406563427676857, guid: 5b861e13454580742a1d9eb157f8f21a, type: 2}
   - {fileID: 0}
+  - {fileID: 11400000, guid: afc2bd9fb7293d54b82f35d62196d32b, type: 2}
+  - {fileID: 4202406563427676857, guid: 5b861e13454580742a1d9eb157f8f21a, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -150,6 +151,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.Tatumvt.VRTest
+    Standalone: com.Tatumvt.VRTest
   buildNumber:
     Standalone: 0
     iPhone: 0
