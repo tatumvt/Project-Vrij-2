@@ -12,7 +12,9 @@ public class characterMovementHelper : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        xRRig = GetComponent<XRRig>();
+        characterController = GetComponent<CharacterController>();
+        driver = GetComponent<CharacterControllerDriver>();
     }
 
     // Update is called once per frame
