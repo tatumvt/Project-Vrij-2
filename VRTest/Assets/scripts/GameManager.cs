@@ -16,11 +16,5 @@ public class GameManager : MonoBehaviour
         {
             scent.SetActive(false);
         }
-       /* if (Input.GetButtonDown("Button.Two"))
-        {
-            scent.SetActive(true);
-        }else{
-            scent.SetActive(false);
-        }*/
     }
 }
