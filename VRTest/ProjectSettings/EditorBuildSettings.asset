@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/movementTest.unity
     guid: 1471d41f2937e7146b1a433dc2d99e4c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Milou.unity
     guid: 7c75e71975fcbc6498c90c8fe3f3ee89
+  - enabled: 1
+    path: Assets/Scenes/armMovement.unity
+    guid: dfbe05482968dc944a9dd756e1466a41
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: afc2bd9fb7293d54b82f35d62196d32b,
       type: 2}
