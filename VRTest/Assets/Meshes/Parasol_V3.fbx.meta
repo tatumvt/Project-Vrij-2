@@ -3,7 +3,12 @@ guid: cf379ae2cba9f5d41ac8192a7d6754ee
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Parasols
+    second: {fileID: 2100000, guid: 109515fa8bb028d40b4268d5c16caf63, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
