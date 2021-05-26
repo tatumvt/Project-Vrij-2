@@ -17,4 +17,19 @@ public class GameManager : MonoBehaviour
             scent.SetActive(false);
         }
     }
+    public IEnumerator updateLoop()
+    {
+        if (OVRInput.Get(OVRInput.Button.One))
+        {
+            scent.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            StartCoroutine(updateLoop());
+        } else
+            {
+            scent.SetActive(false);
+            yield return new WaitForSeconds(1f);
+            StartCoroutine(updateLoop());
+            }
+        }
+    }
 }
