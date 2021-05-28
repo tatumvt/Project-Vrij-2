@@ -15,12 +15,12 @@ D:/HKU GI/2020-2021/Blok 4/Project Vrij 2/TheGameProjectVrij2/Project-Vrij-2/VRT
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61609
+61878
 Successfully changed project path to: D:/HKU GI/2020-2021/Blok 4/Project Vrij 2/TheGameProjectVrij2/Project-Vrij-2/VRTest
 D:/HKU GI/2020-2021/Blok 4/Project Vrij 2/TheGameProjectVrij2/Project-Vrij-2/VRTest
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 58.64 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.99 ms.
+Refreshing native plugins compatible for Editor in 61.03 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 1.35 ms.
 Initialize engine version: 2020.3.8f1 (507919d4fff5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/HKU GI/2020-2021/Blok 4/Project Vrij 2/TheGameProjectVrij2/Project-Vrij-2/VRTest/Assets
@@ -36,22 +36,22 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56592
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56928
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002424 seconds.
+Registered in 0.002191 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 46.33 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 52.24 ms, found 4 plugins.
 Preloading 1 native plugins for Editor in 0.04 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.045 seconds
+- Completed reload, in  1.867 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003055 seconds.
+Registered in 0.002781 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 49.21 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 52.43 ms, found 4 plugins.
 Preloading 1 native plugins for Editor in 0.03 ms.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
@@ -59,242 +59,34 @@ Preloading 1 native plugins for Editor in 0.03 ms.
 [XR] Unable to register input lifecyle provider: [1]
 [XR] OVRP version 1.60.0
 Mono: successfully reloaded assembly
-- Completed reload, in  0.955 seconds
+- Completed reload, in  1.007 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.59 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.60 ms, found 4 plugins.
 Preloading 1 native plugins for Editor in 0.04 ms.
 Unloading 2192 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 106.4 MB.
-System memory in use after: 106.4 MB.
+System memory in use after: 106.5 MB.
 
 Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 2623.
-Total: 2.084100 ms (FindLiveObjects: 0.194400 ms CreateObjectMapping: 0.064900 ms MarkObjects: 1.749800 ms  DeleteObjects: 0.074300 ms)
+Total: 2.070300 ms (FindLiveObjects: 0.213400 ms CreateObjectMapping: 0.066600 ms MarkObjects: 1.715800 ms  DeleteObjects: 0.073400 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Meshes/Fruit/Vis_Piece.fbx
-  artifactKey: Guid(e7f7b702988a15f428f142c02dc3fd31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/Fruit/Vis_Piece.fbx using Guid(e7f7b702988a15f428f142c02dc3fd31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc0fb91534185ec1a22541b7892a342c') in 0.132366 seconds
-  Import took 0.135382 seconds .
+  path: Assets/Meshes/CreatedPrefabs/EscapeKist.prefab
+  artifactKey: Guid(a3e78c1db6381f14d8cc26e9754802bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/CreatedPrefabs/EscapeKist.prefab using Guid(a3e78c1db6381f14d8cc26e9754802bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc0370e653586e60bf527a38a1e9cbc4') in 0.181228 seconds
+  Import took 0.224542 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000477 seconds.
-  path: Assets/Meshes/Fruit/Vis.fbx
-  artifactKey: Guid(bc6e3513496b7544b813b68aa024866a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/Fruit/Vis.fbx using Guid(bc6e3513496b7544b813b68aa024866a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d06a2bb408abd0dcd48fc666a33fdf0') in 0.023610 seconds
-  Import took 0.027050 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 514.877363 seconds.
-  path: Assets/Meshes/CreatedPrefabs/MarkterStal3.prefab
-  artifactKey: Guid(244e2814c09646b4ba9d26b59dc0bd39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/CreatedPrefabs/MarkterStal3.prefab using Guid(244e2814c09646b4ba9d26b59dc0bd39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '375bdd5a3a926b94990b34e3bd07fce5') in 0.209687 seconds
-  Import took 0.237806 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 278.694840 seconds.
-  path: Assets/Meshes/CreatedPrefabs/MarkterStal3.prefab
-  artifactKey: Guid(244e2814c09646b4ba9d26b59dc0bd39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/CreatedPrefabs/MarkterStal3.prefab using Guid(244e2814c09646b4ba9d26b59dc0bd39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfd0301b19a0e721371d2af8ebb4ca95') in 0.126293 seconds
-  Import took 0.130224 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 105.553926 seconds.
-  path: Assets/Meshes/CreatedPrefabs/MarketStal1 (2).prefab
-  artifactKey: Guid(1afe83e8fe891dd40b7d5cbbed472e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/CreatedPrefabs/MarketStal1 (2).prefab using Guid(1afe83e8fe891dd40b7d5cbbed472e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7df5e762ea1646077ee559cc08bc9cda') in 0.148309 seconds
-  Import took 0.155487 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 46.254591 seconds.
-  path: Assets/Meshes/CreatedPrefabs/Rij1 (1).prefab
-  artifactKey: Guid(5dd550194287289459811bf141bbc8b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/CreatedPrefabs/Rij1 (1).prefab using Guid(5dd550194287289459811bf141bbc8b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b84c1c78ab20e2902479ed8cc97d3319') in 0.136915 seconds
-  Import took 0.142417 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 545.207118 seconds.
-  path: Assets/Meshes/CreatedPrefabs/MarketStal2 (2).prefab
-  artifactKey: Guid(e0cecb442907d7648908edd20dbd1e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/CreatedPrefabs/MarketStal2 (2).prefab using Guid(e0cecb442907d7648908edd20dbd1e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b0ef54d376902c804e7550dd1160185') in 0.124053 seconds
-  Import took 0.128939 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1136.502946 seconds.
-  path: Assets/Meshes/Fruit/BlokjesFruit
-  artifactKey: Guid(dc0444dcb79ad9e45899f98ee1affa3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/Fruit/BlokjesFruit using Guid(dc0444dcb79ad9e45899f98ee1affa3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52d7eb31473a888115bc1776bd7b77f2') in 0.005264 seconds
-  Import took 0.009955 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.662924 seconds.
-  path: Assets/Meshes/Fruit/BlokjesFruit/Blok_Ananas.fbx
-  artifactKey: Guid(ae0f85d48b2b8c24b9dba17ad44d8dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/Fruit/BlokjesFruit/Blok_Ananas.fbx using Guid(ae0f85d48b2b8c24b9dba17ad44d8dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f8d7a2fa0b590ab01ea754297dad03e') in 0.028324 seconds
-  Import took 0.032904 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000354 seconds.
-  path: Assets/Meshes/Fruit/BlokjesFruit/Blok_Tomaat.fbx
-  artifactKey: Guid(a9b0d538808520d4f86703ad9a7d09da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/Fruit/BlokjesFruit/Blok_Tomaat.fbx using Guid(a9b0d538808520d4f86703ad9a7d09da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cde0ebac9fcd04df913881db67ef60f5') in 0.020315 seconds
-  Import took 0.023772 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000270 seconds.
-  path: Assets/Meshes/Fruit/BlokjesFruit/Blok_Ananas.fbx
-  artifactKey: Guid(ae0f85d48b2b8c24b9dba17ad44d8dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/Fruit/BlokjesFruit/Blok_Ananas.fbx using Guid(ae0f85d48b2b8c24b9dba17ad44d8dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f8d7a2fa0b590ab01ea754297dad03e') in 0.022781 seconds
-  Import took 0.026856 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/Meshes/Fruit/BlokjesFruit/Blok_Watermeloen.fbx
-  artifactKey: Guid(059667716974dcf45baa49383038e7a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/Fruit/BlokjesFruit/Blok_Watermeloen.fbx using Guid(059667716974dcf45baa49383038e7a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f9eb13f0746d5e510cb668920dabdf7') in 0.023365 seconds
-  Import took 0.026968 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000281 seconds.
-  path: Assets/Meshes/Fruit/BlokjesFruit/Blok_Appel.fbx
-  artifactKey: Guid(bbfb169088d65bf48945997220b121a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/Fruit/BlokjesFruit/Blok_Appel.fbx using Guid(bbfb169088d65bf48945997220b121a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7343e390eccb50f616800dae37634958') in 0.023123 seconds
-  Import took 0.026512 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/Meshes/Fruit/BlokjesFruit/Blok_Sinaasappel.fbx
-  artifactKey: Guid(38770e8a86e315b4197571bde497ab32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/Fruit/BlokjesFruit/Blok_Sinaasappel.fbx using Guid(38770e8a86e315b4197571bde497ab32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cafc4dc36d2d63e511d5a2a28587f7e') in 0.020553 seconds
-  Import took 0.040843 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Meshes/Fruit/BlokjesFruit/Blok_Mango.fbx
-  artifactKey: Guid(37484099406849b439932e6ef3c12085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/Fruit/BlokjesFruit/Blok_Mango.fbx using Guid(37484099406849b439932e6ef3c12085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9700cdf47b3bb5d9cbc156723a89bb21') in 0.019427 seconds
-  Import took 0.023422 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/Meshes/Fruit/BlokjesFruit/Blok_Vis.fbx
-  artifactKey: Guid(2b611f4aaa6712f4f9558e51c18bbec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Meshes/Fruit/BlokjesFruit/Blok_Vis.fbx using Guid(2b611f4aaa6712f4f9558e51c18bbec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69c759d081b44ecf1934c5a01e7578a2') in 0.015632 seconds
-  Import took 0.018771 seconds .
-
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 723.73 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
-Unloading 27 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 63.9 MB.
-System memory in use after: 64.1 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2666.
-Total: 4.845500 ms (FindLiveObjects: 0.208600 ms CreateObjectMapping: 0.067800 ms MarkObjects: 4.528900 ms  DeleteObjects: 0.039300 ms)
-
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 8.40 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.04 ms.
-Unloading 27 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 63.9 MB.
-System memory in use after: 64.1 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2666.
-Total: 3.156900 ms (FindLiveObjects: 0.252500 ms CreateObjectMapping: 0.086400 ms MarkObjects: 2.796800 ms  DeleteObjects: 0.020200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 995.054883 seconds.
-  path: Assets/Scenes/armMovement.unity
-  artifactKey: Guid(dfbe05482968dc944a9dd756e1466a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/armMovement.unity using Guid(dfbe05482968dc944a9dd756e1466a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfafae402f79738013f867a41d76b4eb') in 0.015685 seconds
-  Import took 0.020083 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 34.659052 seconds.
-  path: Assets/Scenes/Milou_V2.unity
-  artifactKey: Guid(6edc3954b9766f04389673fb952b532d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Milou_V2.unity using Guid(6edc3954b9766f04389673fb952b532d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '309401114670156177c3ad4810001497') in 0.005007 seconds
-  Import took 0.032609 seconds .
-
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 9.24 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.04 ms.
-Unloading 27 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 64.0 MB.
-System memory in use after: 64.1 MB.
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2666.
-Total: 4.041900 ms (FindLiveObjects: 0.304100 ms CreateObjectMapping: 0.135900 ms MarkObjects: 3.545700 ms  DeleteObjects: 0.054100 ms)
-
-========================================================================
-Received Prepare
-The file 'UserSettings/EditorUserSettings.asset' seems to have merge conflicts. Please open it in a text editor and fix the merge.
-
-Trying to reload asset but can't find object on disk
-
-Registering precompiled user dll's ...
-Registered in 0.339186 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.04 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.250 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.04 ms.
-Unloading 2133 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 105.2 MB.
-System memory in use after: 105.3 MB.
-
-Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2670.
-Total: 2.372000 ms (FindLiveObjects: 0.193800 ms CreateObjectMapping: 0.066800 ms MarkObjects: 2.084400 ms  DeleteObjects: 0.025900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
-========================================================================
-Received Import Request.
-  Time since last request: 1610.281979 seconds.
-  path: Assets/Oculus/OculusProjectConfig.asset
-  artifactKey: Guid(77c8d45d6d2885a4f90154ae4c585c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/OculusProjectConfig.asset using Guid(77c8d45d6d2885a4f90154ae4c585c13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5dfb6ff12031955ffc3fc76e539f9e7') in 0.022522 seconds
-  Import took 0.168722 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 208.260102 seconds.
-  path: Assets/Scenes/Milou_V2.unity
-  artifactKey: Guid(6edc3954b9766f04389673fb952b532d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Milou_V2.unity using Guid(6edc3954b9766f04389673fb952b532d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2507e039eed5c0c5ff2fabebc5654bc6') in 0.005051 seconds
-  Import took 0.129705 seconds .
+  Time since last request: 6.085274 seconds.
+  path: Assets/Meshes/CreatedPrefabs/EscapeKist.prefab
+  artifactKey: Guid(a3e78c1db6381f14d8cc26e9754802bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meshes/CreatedPrefabs/EscapeKist.prefab using Guid(a3e78c1db6381f14d8cc26e9754802bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02eb08f23fff6e276ab562d6277ef03d') in 0.052180 seconds
+  Import took 0.073548 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
