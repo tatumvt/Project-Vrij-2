@@ -1,12 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static OVRInput;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject scent;
-    public Button endTurnBTN;
     void Update()
     {
         if (OVRInput.Get(OVRInput.Button.One))
