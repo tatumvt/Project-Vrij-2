@@ -3,7 +3,12 @@ guid: 29ff100b04f9f344188f51684a42a0eb
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Blok_Fruit
+    second: {fileID: 2100000, guid: c004147e1221f3243ae0b989f1130b46, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
