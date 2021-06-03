@@ -10,8 +10,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
-        ps = GetComponent<ParticleSystem>();
+        animator = GetComponentInChildren<Animator>();
+        ps = GetComponentInChildren<ParticleSystem>();
     }
     void Update()
     {

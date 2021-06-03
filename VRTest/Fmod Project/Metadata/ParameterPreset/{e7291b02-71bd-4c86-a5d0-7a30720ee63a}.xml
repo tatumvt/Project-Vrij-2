@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{e7291b02-71bd-4c86-a5d0-7a30720ee63a}">
+		<property name="name">
+			<value>Spanning</value>
+		</property>
+		<relationship name="folder">
+			<destination>{92fbac56-9d25-4c80-af6b-43ada1a70fbf}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{f0d2d87a-3911-4cf6-89fb-51bf67eb1208}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{f0d2d87a-3911-4cf6-89fb-51bf67eb1208}">
+		<property name="maximum">
+			<value>3</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.47999998927116394</value>
+		</property>
+	</object>
+</objects>
