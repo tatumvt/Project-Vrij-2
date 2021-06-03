@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
         {
             //stop current animation
             //start next animation
+
         }
     }
 
