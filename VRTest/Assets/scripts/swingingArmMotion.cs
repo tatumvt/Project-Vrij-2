@@ -34,33 +34,36 @@ public class swingingArmMotion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //get the forward direction from the center eye camera and set it to forward direction object
-        float yRotation = CenterEyeCamera.transform.eulerAngles.y;
-        ForwardDirection.transform.eulerAngles = new Vector3(0, yRotation, 0);
-
-        //get current positions of hands
-        PositionThisFrameLeftHand = LeftHand.transform.position;
-        PositionThisFrameRightHand = RightHand.transform.position;
-        //player pos
-        PlayerPositionThisFrame = transform.position;
-
-        //get the distance the hands & player have moved since last frame
-        var playerDistanceMoved = Vector3.Distance(PlayerPositionThisFrame, PlayerPositionPreviousFrame);
-        var leftHandDistanceMoved = Vector3.Distance(PositionPreviousFrameLeftHand, PositionThisFrameLeftHand);
-        var rightHandDistanceMoved = Vector3.Distance(PositionPreviousFrameRightHand, PositionThisFrameRightHand);
-
-        //add them up to get the handspeed from the user - movement of the player to neglect the movement from the player from the equation
-        HandSpeed = ((leftHandDistanceMoved - playerDistanceMoved) + (rightHandDistanceMoved - playerDistanceMoved));
-
-        if(Time.timeSinceLevelLoad > 1f)
+        if (OVRInput.Get(OVRInput.Button.Two) || Input.GetKey(KeyCode.F))
         {
-            transform.position += ForwardDirection.transform.forward * HandSpeed * Speed * Time.deltaTime;
-        }
+            //get the forward direction from the center eye camera and set it to forward direction object
+            float yRotation = CenterEyeCamera.transform.eulerAngles.y;
+            ForwardDirection.transform.eulerAngles = new Vector3(0, yRotation, 0);
 
-        //set previous positions of hands for next frame
-        PositionPreviousFrameLeftHand = PositionThisFrameLeftHand;
-        PositionPreviousFrameRightHand = PositionThisFrameRightHand;
-        //set player pos previous frame
-        PlayerPositionPreviousFrame = PlayerPositionThisFrame;
+            //get current positions of hands
+            PositionThisFrameLeftHand = LeftHand.transform.position;
+            PositionThisFrameRightHand = RightHand.transform.position;
+            //player pos
+            PlayerPositionThisFrame = transform.position;
+
+            //get the distance the hands & player have moved since last frame
+            var playerDistanceMoved = Vector3.Distance(PlayerPositionThisFrame, PlayerPositionPreviousFrame);
+            var leftHandDistanceMoved = Vector3.Distance(PositionPreviousFrameLeftHand, PositionThisFrameLeftHand);
+            var rightHandDistanceMoved = Vector3.Distance(PositionPreviousFrameRightHand, PositionThisFrameRightHand);
+
+            //add them up to get the handspeed from the user - movement of the player to neglect the movement from the player from the equation
+            HandSpeed = ((leftHandDistanceMoved - playerDistanceMoved) + (rightHandDistanceMoved - playerDistanceMoved));
+
+            if (Time.timeSinceLevelLoad > 1f)
+            {
+                transform.position += ForwardDirection.transform.forward * HandSpeed * Speed * Time.deltaTime;
+            }
+
+            //set previous positions of hands for next frame
+            PositionPreviousFrameLeftHand = PositionThisFrameLeftHand;
+            PositionPreviousFrameRightHand = PositionThisFrameRightHand;
+            //set player pos previous frame
+            PlayerPositionPreviousFrame = PlayerPositionThisFrame;
+        }
     }
 }

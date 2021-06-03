@@ -4,29 +4,38 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject scent;
+    public ParticleSystem ps;
+    public Animator animator;
+
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+        ps = GetComponent<ParticleSystem>();
+    }
     void Update()
     {
-        if (OVRInput.Get(OVRInput.Button.One))
+        if (OVRInput.Get(OVRInput.Button.One) || Input.GetKey(KeyCode.R))
         {
-            scent.SetActive(true);
-            StartCoroutine(TimeoutEndTurnButton());
+            ps.Play();
+            animator.SetFloat("SpeedModifier", 1f);
         }
-        else
+        if (OVRInput.GetUp(OVRInput.Button.One) || Input.GetKey(KeyCode.R))
         {
-            scent.SetActive(false);
+            ps.Stop();
+            animator.SetFloat("SpeedModifier", 0f);
         }
     }
-    public IEnumerator TimeoutEndTurnButton()
-    {
-        if (OVRInput.Get(OVRInput.Button.One))
-        {
-            yield return new WaitForSeconds(5f);
-            scent.SetActive(false);
-            yield return new WaitForSeconds(1f);
-            scent.SetActive(true);
-        }
-      }
+   
 
+    private void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.tag == "Fruit")
+        {
+            //stop current animation
+            //start next animation
+        }
     }
+
+}
 
