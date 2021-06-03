@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Milou_V2.unity
     guid: 6edc3954b9766f04389673fb952b532d
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Joelle.unity
     guid: c81b3714fabe07944b8815d5ebddf8d8
   - enabled: 1
