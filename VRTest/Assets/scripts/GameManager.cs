@@ -15,8 +15,6 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        
-
         if (OVRInput.Get(OVRInput.Button.One) || Input.GetKey(KeyCode.R))
         {
             ps.Play();
