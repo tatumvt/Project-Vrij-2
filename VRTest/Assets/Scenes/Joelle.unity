@@ -2952,7 +2952,7 @@ PrefabInstance:
     - target: {fileID: 7081468714275747139, guid: 8c4d41b16bca78d43a28e1cee2554f88,
         type: 3}
       propertyPath: m_Name
-      value: orange (1)
+      value: StartButton_Animation
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c4d41b16bca78d43a28e1cee2554f88, type: 3}
