@@ -124,7 +124,7 @@ public class OVRSceneSampleController : MonoBehaviour
     void Update()
     {
         // Recenter pose
-        UpdateRecenterPose();
+       // UpdateRecenterPose();
 
         // Turn On/Off Vision Mode
         UpdateVisionMode();
@@ -197,9 +197,9 @@ public class OVRSceneSampleController : MonoBehaviour
     /// <summary>
     /// Recenter pose
     /// </summary>
-    void UpdateRecenterPose()
+    /*void UpdateRecenterPose()
     {
         if (Input.GetKeyDown(KeyCode.R))
             OVRManager.display.RecenterPose();
-    }
+    }*/
 }

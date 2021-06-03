@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public ParticleSystem ps;
     public Animator animator;
+    public GameObject cat;
 
 
     private void Start()
@@ -17,12 +18,18 @@ public class GameManager : MonoBehaviour
     {
         if (OVRInput.Get(OVRInput.Button.One) || Input.GetKey(KeyCode.R))
         {
-            ps.Play();
+            if (!ps.isPlaying)
+            {
+                ps.Play();
+            }
             animator.SetFloat("SpeedModifier", 1f);
         }
-        if (OVRInput.GetUp(OVRInput.Button.One) || Input.GetKey(KeyCode.R))
+        if (OVRInput.GetUp(OVRInput.Button.One) || Input.GetKeyUp(KeyCode.R))
         {
-            ps.Stop();
+            if (ps.isPlaying)
+            {
+                ps.Stop();
+            }
             animator.SetFloat("SpeedModifier", 0f);
         }
     }
@@ -34,7 +41,7 @@ public class GameManager : MonoBehaviour
         {
             //stop current animation
             //start next animation
-
+            cat.SetActive(true);
         }
     }
 
