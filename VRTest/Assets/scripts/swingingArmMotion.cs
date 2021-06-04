@@ -34,7 +34,7 @@ public class swingingArmMotion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (OVRInput.Get(OVRInput.Button.Two) || Input.GetKey(KeyCode.F))
+        if (OVRInput.Get(OVRInput.Button.Three) || Input.GetKey(KeyCode.F))
         {
             //get the forward direction from the center eye camera and set it to forward direction object
             float yRotation = CenterEyeCamera.transform.eulerAngles.y;
