@@ -8,11 +8,15 @@ public class GameManager : MonoBehaviour
     public Animator animator;
     public GameObject cat;
 
+    public ParticleSystem[] geursporen;
+
+    public int currentScent;
 
     private void Start()
     {
         animator = GetComponentInChildren<Animator>();
         ps = GetComponentInChildren<ParticleSystem>();
+        currentScent = 0;
     }
     void Update()
     {
@@ -41,9 +45,17 @@ public class GameManager : MonoBehaviour
         {
             //stop current animation
             //start next animation
+            currentScent = currentScent + 1;
+            animator.Play(geursporen[currentScent].name);
+        }
+
+        if (collider.gameObject.tag == "Fish")
+        {
+            //stop current animation
             cat.SetActive(true);
         }
     }
+
 
 }
 

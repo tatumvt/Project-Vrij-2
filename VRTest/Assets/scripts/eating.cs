@@ -11,7 +11,7 @@ public class eating : MonoBehaviour
     {
         if (collider.gameObject.tag == "MainCamera")
         {
-            Destroy(blokje);
+            Destroy(this.gameObject);
         }
     }
 }

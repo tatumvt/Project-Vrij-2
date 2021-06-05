@@ -372,7 +372,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f28c73d0117b548408dcdb7216854487, type: 2}
+  - {fileID: 2100000, guid: b56eb90e550c5b64c8f5d8d92f4df032, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -434,7 +434,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -8670,7 +8670,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 38770e8a86e315b4197571bde497ab32,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.19034958
+      value: -0.133
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 38770e8a86e315b4197571bde497ab32,
         type: 3}
@@ -9188,7 +9188,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f28c73d0117b548408dcdb7216854487, type: 2}
+  - {fileID: 2100000, guid: b56eb90e550c5b64c8f5d8d92f4df032, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9250,7 +9250,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -20739,7 +20739,7 @@ MonoBehaviour:
   RightHand: {fileID: 753777770}
   CenterEyeCamera: {fileID: 753777765}
   ForwardDirection: {fileID: 753777764}
-  Speed: -600
+  Speed: -400
 --- !u!114 &753777773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22187,7 +22187,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f28c73d0117b548408dcdb7216854487, type: 2}
+  - {fileID: 2100000, guid: b56eb90e550c5b64c8f5d8d92f4df032, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22249,7 +22249,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -28202,7 +28202,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f28c73d0117b548408dcdb7216854487, type: 2}
+  - {fileID: 2100000, guid: b56eb90e550c5b64c8f5d8d92f4df032, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -28264,7 +28264,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -34769,7 +34769,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1146781686}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -493.44, y: -0.19, z: 866.52}
+  m_LocalPosition: {x: -493.44, y: 0.464, z: 866.401}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1396833992}
@@ -34811,7 +34811,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f28c73d0117b548408dcdb7216854487, type: 2}
+  - {fileID: 2100000, guid: b56eb90e550c5b64c8f5d8d92f4df032, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -34873,7 +34873,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -42357,6 +42357,17 @@ MonoBehaviour:
   ps: {fileID: 717243638}
   animator: {fileID: 717243639}
   cat: {fileID: 1232816606}
+  geursporen:
+  - {fileID: 717243638}
+  - {fileID: 912884422}
+  - {fileID: 1045409285}
+  - {fileID: 538545840}
+  - {fileID: 1595113025}
+  - {fileID: 20020503}
+  - {fileID: 1815492906}
+  - {fileID: 1444592471}
+  - {fileID: 1146781690}
+  currentScent: 0
 --- !u!1 &1398156541 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4326698738849252509, guid: d44b908cae4e9a44ead03bc30dad603b,
@@ -42707,7 +42718,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: bbfb169088d65bf48945997220b121a3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.14
+      value: 0.1371
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: bbfb169088d65bf48945997220b121a3,
         type: 3}
@@ -42915,7 +42926,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f28c73d0117b548408dcdb7216854487, type: 2}
+  - {fileID: 2100000, guid: b56eb90e550c5b64c8f5d8d92f4df032, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -42977,7 +42988,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -48877,7 +48888,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f28c73d0117b548408dcdb7216854487, type: 2}
+  - {fileID: 2100000, guid: b56eb90e550c5b64c8f5d8d92f4df032, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -48939,7 +48950,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -55526,7 +55537,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f28c73d0117b548408dcdb7216854487, type: 2}
+  - {fileID: 2100000, guid: b56eb90e550c5b64c8f5d8d92f4df032, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -55588,7 +55599,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
