@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
 
     public int currentScent;
 
+    public audioManager am;
+
     private void Start()
     {
         animator = GetComponentInChildren<Animator>();
@@ -24,6 +26,7 @@ public class GameManager : MonoBehaviour
         {
             if (!ps.isPlaying)
             {
+                am.playSniff();
                 ps.Play();
             }
             animator.SetFloat("SpeedModifier", 1f);
