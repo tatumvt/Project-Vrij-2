@@ -8,6 +8,7 @@ public class spawnMice : MonoBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
+        //find gameobject tag = cat 
         if (collider.gameObject.tag == "Player")
         {
             mice.SetActive(true);
