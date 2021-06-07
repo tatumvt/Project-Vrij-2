@@ -8,22 +8,25 @@ public class GameManager : MonoBehaviour
     public Animator animator;
     public GameObject cat;
 
-    public ParticleSystem[] geursporen;
+    public GameObject[] geursporen;
 
     public int currentScent;
 
     public audioManager am;
+    public AudioSource geurspoorAudioSource;
 
     private void Start()
     {
-        animator = GetComponentInChildren<Animator>();
-        ps = GetComponentInChildren<ParticleSystem>();
-        currentScent = 0;
+        ActivateScent(0);
     }
     void Update()
     {
         if (OVRInput.Get(OVRInput.Button.One) || Input.GetKey(KeyCode.R))
         {
+            if(geurspoorAudioSource != null)
+            {
+                geurspoorAudioSource.volume = Mathf.Lerp(geurspoorAudioSource.volume, 1, Time.deltaTime);
+            }
             if (!ps.isPlaying)
             {
                 am.playSniff();
@@ -33,6 +36,10 @@ public class GameManager : MonoBehaviour
         }
         if (OVRInput.GetUp(OVRInput.Button.One) || Input.GetKeyUp(KeyCode.R))
         {
+            if (geurspoorAudioSource != null)
+            {
+                geurspoorAudioSource.volume = Mathf.Lerp(geurspoorAudioSource.volume, 0, Time.deltaTime);
+            }
             if (ps.isPlaying)
             {
                 ps.Stop();
@@ -40,17 +47,8 @@ public class GameManager : MonoBehaviour
             animator.SetFloat("SpeedModifier", 0f);
         }
     }
-   
-
     private void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.tag == "Fruit")
-        {
-            //stop current animation
-            //start next animation
-            currentScent = currentScent + 1;
-            animator.Play(geursporen[currentScent].name);
-        }
 
         if (collider.gameObject.tag == "Fish")
         {
@@ -58,7 +56,26 @@ public class GameManager : MonoBehaviour
             cat.SetActive(true);
         }
     }
+    public void ActivateScent(int index)
+    {
+        Debug.Log("activate scent" + index);
+        if(geurspoorAudioSource != null)
+        {
+            geurspoorAudioSource.Stop();
+        }
+        if(ps != null)
+        {
+            ps.Stop();
+        }
+        if (animator != null)
+        {
+            animator.SetFloat("SpeedModifier", 0f);
+        }
 
-
+        currentScent = index;
+        ps = geursporen[currentScent].GetComponent<ParticleSystem>();
+        animator = geursporen[currentScent].GetComponent<Animator>();
+        geurspoorAudioSource = geursporen[currentScent].GetComponent<AudioSource>();
+    }
 }
 
