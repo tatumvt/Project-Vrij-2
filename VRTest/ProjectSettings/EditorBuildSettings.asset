@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Milou.unity
     guid: 7c75e71975fcbc6498c90c8fe3f3ee89
   - enabled: 0
-    path: Assets/Scenes/armMovement.unity
-    guid: dfbe05482968dc944a9dd756e1466a41
-  - enabled: 0
     path: Assets/Scenes/Milou_V2.unity
     guid: 6edc3954b9766f04389673fb952b532d
   - enabled: 0
@@ -23,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: c79f502e7d06b3f45b746ac9d4eafde8
+  - enabled: 0
+    path: Assets/Scenes/armMovement.unity
+    guid: dfbe05482968dc944a9dd756e1466a41
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: afc2bd9fb7293d54b82f35d62196d32b,
       type: 2}
