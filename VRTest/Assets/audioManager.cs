@@ -15,11 +15,23 @@ public class audioManager : MonoBehaviour
     public AudioSource sniff;
     public AudioClip[] audioClipArray3;
 
+    public AudioSource meow;
+    public AudioClip[] audioClipArray4;
+
+    public AudioSource miauw;
+    public AudioClip[] audioClipArray5;
+
     // Update is called once per frame
     public void playEat()
     {
         noise.clip = audioClipArray[Random.Range(0, audioClipArray.Length)];
         noise.PlayOneShot(noise.clip);
+    }
+
+    public void playMeow()
+    {
+        meow.clip = audioClipArray4[Random.Range(0, audioClipArray4.Length)];
+        meow.PlayOneShot(meow.clip);
     }
 
     private void Awake()
@@ -41,6 +53,16 @@ public class audioManager : MonoBehaviour
         playRumble();
         StartCoroutine(playAudio());
     }
+
+    public void playMiauw()
+    {
+        if (disableSfx != true)
+        {
+            miauw.clip = audioClipArray5[Random.Range(0, audioClipArray5.Length)];
+            miauw.PlayOneShot(miauw.clip);
+        }
+    }
+
     public void playSniff()
     {
         sniff.clip = audioClipArray3[Random.Range(0, audioClipArray3.Length)];

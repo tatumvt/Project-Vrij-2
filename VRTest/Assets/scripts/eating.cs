@@ -4,20 +4,23 @@ using UnityEngine;
 
 public class eating : MonoBehaviour
 {
-    public OVRGrabbable blokje;
+    private OVRGrabbable blokje;
     public audioManager am;
-    public OVRGrabber handOne;
-    public OVRGrabber handTwo;
 
+    private void Awake()
+    {
+        blokje = GetComponent<OVRGrabbable>();
+    }
 
-    private void OnTriggerEnter(Collider collider)
+   private void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.tag == "MainCamera")
         {
             am.playEat();
-
-            Destroy(this.gameObject);
-            handOne.ForceRelease(blokje);
+            // blokje.GrabEnd(Vector3.zero, Vector3.zero);
+            blokje.grabbedBy.ForceRelease(blokje);
+            this.gameObject.SetActive(false);
+           // Destroy(this.gameObject);
         }
     }
 }

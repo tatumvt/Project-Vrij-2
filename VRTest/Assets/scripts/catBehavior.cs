@@ -10,6 +10,9 @@ public class catBehavior : MonoBehaviour
     private Vector3 movement;
     public float moveSpeed = 4f;
 
+    public audioManager am;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +26,24 @@ public class catBehavior : MonoBehaviour
 
     void moveCat(Vector3 direction)
     {
+        am.StartCoroutine(playCatNoise());
         float step = 3f * moveSpeed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(this.transform.position, player.position, step) ;
         transform.LookAt(player);
+    }
+    private void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.tag == "Player")
+        {
+            am.playMeow();
+            moveSpeed = moveSpeed - 2f;
+
+        }
+    }
+    IEnumerator playCatNoise()
+    {
+        yield return new WaitForSeconds(10f);
+        am.playMiauw();
+        StartCoroutine(playCatNoise());
     }
 }
