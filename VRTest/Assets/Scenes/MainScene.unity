@@ -16897,7 +16897,7 @@ BoxCollider:
   m_GameObject: {fileID: 552516153}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 61.606876, y: 6.847979, z: 80}
   m_Center: {x: -22.754942, y: 3.232898, z: 3.0677276}
@@ -41747,6 +41747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cat: {fileID: 1232816606}
+  muisjes: {fileID: 1925311927}
 --- !u!114 &1065650314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54226,6 +54227,7 @@ GameObject:
   - component: {fileID: 1232816608}
   - component: {fileID: 1232816607}
   - component: {fileID: 1232816609}
+  - component: {fileID: 1232816610}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Cat
@@ -54246,10 +54248,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 753777790}
-  moveSpeed: 2
+  moveSpeed: 2.5
   am: {fileID: 1762597231}
   animator: {fileID: 552516155}
-  disableSfx: 0
 --- !u!4 &1232816608
 Transform:
   m_ObjectHideFlags: 0
@@ -54282,6 +54283,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &1232816610
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232816606}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 61.606876, y: 6.847979, z: 58.863983}
+  m_Center: {x: 0, y: 0, z: 33.822586}
 --- !u!1 &1239692655 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6755922233638478745, guid: d44b908cae4e9a44ead03bc30dad603b,
@@ -72053,7 +72067,7 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Music/Music
   PlayEvent: 1
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -79063,7 +79077,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f67ca117a41306e4f899dbdb738bd618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mice: {fileID: 1925311927}
   cat: {fileID: 1232816606}
 --- !u!4 &1844374409
 Transform:

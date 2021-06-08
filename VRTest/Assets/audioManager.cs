@@ -30,6 +30,7 @@ public class audioManager : MonoBehaviour
 
     public void playMeow()
     {
+        Debug.Log("play");
         meow.clip = audioClipArray4[Random.Range(0, audioClipArray4.Length)];
         meow.PlayOneShot(meow.clip);
     }
