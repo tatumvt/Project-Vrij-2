@@ -13,6 +13,7 @@ public class catBehavior : MonoBehaviour
     public audioManager am;
 
     public Animator animator;
+    public bool disableSfx;
 
 
     // Start is called before the first frame update
@@ -40,7 +41,10 @@ public class catBehavior : MonoBehaviour
         if (collider.gameObject.tag == "Player")
         {
             animator.SetInteger("catNearby", 1);
-            am.playMeow();
+            if (disableSfx != true)
+            {
+                am.playMeow();
+            }
             moveSpeed = moveSpeed - 2f;
             animator.SetInteger("catNearby", 0);
 
