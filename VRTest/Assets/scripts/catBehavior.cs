@@ -12,12 +12,16 @@ public class catBehavior : MonoBehaviour
 
     public audioManager am;
 
+    public Animator animator;
+
 
     // Start is called before the first frame update
     void Start()
     {
         rb = this.GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
+
+        animator = GetComponent<Animator>(); 
     }
     private void FixedUpdate()
     {
@@ -35,8 +39,11 @@ public class catBehavior : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
+            animator.SetInteger("catNearby", 1);
             am.playMeow();
             moveSpeed = moveSpeed - 2f;
+            animator.SetInteger("catNearby", 0);
+
 
         }
     }
