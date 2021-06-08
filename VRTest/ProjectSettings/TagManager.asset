@@ -7,6 +7,8 @@ TagManager:
   - Fruit
   - Fire
   - button
+  - Titel
+  - PlayerHover
   layers:
   - Default
   - TransparentFX
