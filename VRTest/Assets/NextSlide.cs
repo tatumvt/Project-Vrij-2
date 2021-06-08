@@ -25,7 +25,7 @@ public class NextSlide : MonoBehaviour
     void Start()
     {
        
-        StartCoroutine(WaitAndPrint(10));
+        StartCoroutine(WaitAndPrint(25));
     }
 
    

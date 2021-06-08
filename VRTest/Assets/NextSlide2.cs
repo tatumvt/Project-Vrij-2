@@ -24,6 +24,6 @@ public class NextSlide2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(WaitAndPrint(30));
+        StartCoroutine(WaitAndPrint(50));
     }
 }
