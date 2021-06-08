@@ -10,7 +10,7 @@ public class NextSlide : MonoBehaviour
     {
         while (true)
         {
-            Debug.Log(waitTime);
+            //Debug.Log(waitTime);
             yield return new WaitForSeconds(waitTime);
             
             Destroy(GameObject.Find("Tutorial1"));
@@ -25,7 +25,7 @@ public class NextSlide : MonoBehaviour
     void Start()
     {
        
-        StartCoroutine(WaitAndPrint(25));
+        StartCoroutine(WaitAndPrint(35));
     }
 
    

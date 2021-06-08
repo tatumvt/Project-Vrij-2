@@ -8,7 +8,7 @@ public class NextSlide2 : MonoBehaviour
     {
         while (true)
         {
-            Debug.Log(waitTime);
+            //Debug.Log(waitTime);
             yield return new WaitForSeconds(waitTime);
             Destroy(GameObject.Find("Tutorial2"));
         }
@@ -24,6 +24,6 @@ public class NextSlide2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(WaitAndPrint(50));
+        StartCoroutine(WaitAndPrint(65));
     }
 }
